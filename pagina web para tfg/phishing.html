@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataques de Phishing - RedBlindada</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="w-full bg-white shadow-md">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-gray-700 flex items-center">
+                        <a href="index.html" class="flex items-center">
+                            <img src="/img/logo.jpg" alt="Nombre del logotipo" class="h-8 mr-2">
+                            <span class="text-gray-900 text-3xl font-semibold uppercase hover:text-gray-600">redblindada</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center select-none">
+                        <div class="flex flex-1"></div>
+                        <div class="relative">
+                            <button type="button"
+                                class="dropdown-button flex items-center mx-3 text-gray-600 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                                Tipos de Ataque
+                                <svg class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 10.586l2.293-2.293a1 1 0 11 1.414 1.414l-3 3A1 1 0 0110 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu absolute right-0 mt-2 hidden bg-white shadow-md rounded py-1">
+                                <li><a href="phishing.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Phishing</a>
+                                </li>
+                                <li><a href="escritorio-remoto.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a
+                                        Escritorio Remoto</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a Base de
+                                        Datos</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Infeccion de
+                                        PDF</a></li>
+                            </ul>
+                        </div>
+                        <a href="acercade.html" class="mx-3 hover:text-gray-600">Acerca de</a>
+                        <a href="contacto.html" class="mx-3 hover:text-gray-600">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-1">
+            <div class="container mx-auto px-6 py-8">
+                <h1 class="text-4xl font-bold text-gray-800">Ataques de Phishing</h1>
+                <p class="mt-4 text-lg text-gray-700">Los ataques de phishing son intentos de obtener información sensible, como contraseñas o datos financieros, haciéndose pasar por entidades legítimas a través de correos electrónicos, mensajes de texto, o sitios web falsos.</p>
+                <!-- Aquí puedes agregar más contenido sobre los ataques de phishing -->
+        
+                <h2 class="text-2xl font-bold text-gray-800 mt-8">¿Qué es el phishing? </h2>
+                <p class="mt-4 text-lg text-gray-700">El phishing es una técnica de engaño que utilizan los piratas informáticos para robar nuestros datos personales y bancarios a través de la página web falsa de alguna institución oficial como la Agencia Tributaria, nuestro banco o cualquier empresa o tienda que consideraríamos de total confianza.
+
+                    En primer lugar, nos llega un mail, SMS (Smishing) , whatsapp o similar con una excusa cualquiera (hemos ganado un concurso, nos han obsequiado con cupones de descuento en una tienda o supermercado, tenemos que confirmar nuestra cuenta bancaria porque ha habido problemas con una transferencia o pago...) y que contiene un enlace que redirige a una página web falsa que simula ser la oficial.
+                    
+                    Una vez allí, nos piden que introduzcamos nuestros datos de acceso (usuario y contraseña) y es entonces cuando ya nos tienen pillados porque han conseguido la información que necesitan para cometer el robo.
+                    
+                    cuidado con el phishing</p>
+                <!-- Agregar documento con capturas -->
+                <iframe src="/Documentos/ataquephishing.pdf" width="100%" margin top=10px height="600px" frameborder="0"></iframe>
+        
+                <h2 class="text-2xl font-bold text-gray-800 mt-8">Cómo defenderse del ataque de phishing</h2>
+                <p class="mt-4 text-lg text-gray-700">El phishing es una amenaza que afecta a todos los dispositivos por igual, ya sea una tableta, un ordenador o un móvil, y sea cual sea el sistema operativo. El sentido común es la mejor herramienta que tienes para evitar picar el anzuelo, pero también puedes protegerte.
+                    Usa un buen navegador
+                    
+                    Una buena manera de protegerse es utilizar un buen navegador web, que puede bloquear muchas de las amenazas.
+                    
+                    En un reciente análisis de OCU, intentamos acceder a 600 páginas de phishing con los navegadores web más comunes entre los usuarios, pudimos comprobar que de nuevo, los mejores navegadore en Windows son Mozilla Firefox y Microsoft Edge, que fueron capaces de bloquear más del 70% de las amenazas (algo menos que el año pasado). Sin embargo, Google Chrome, que es el navegador más usado por los españoles, aunque ha mejorado con respecto al año pasado, sigue siendo el que menos protección ofrece (solo bloqueó el 39% de las páginas fraudulentas en el sistema operativo Windows  y el 37% en el sistema operativo Mac). Los mejores navegadores en Mac son Firefox y Safari, que bloqueron respectivamente el 70 y el 72% del phishing. 
+                    
+                    Mira en el gráfico el porcentaje (%) de phishing bloqueado por cada navegador en los dos sistemas operativos. 
+                    Y recurre a un antivirus
+                    
+                    Además, disponer de un buen antivirus en el ordenador también te protege. La protección que ofrece el antivirus se sumaría a la protección que ya ofrece de base el navegador web, consiguiendo un bloqueo mayor de páginas de phishing: por ejemplo, usar Google Chrome junto con el mejor del análisis, podría protegerte frente al 96% de las amenazas. Pero ojo, algunos antivirus no ofrecen ninguna o muy poca protección frente al phishing, como es el caso de Windows defender.
+                    
+                    Consulta el comparador de antivirus y localiza cuáles son los programas más eficaces contra el phishing:
+                    
+                    Comparador de antivirus
+                    ¿Qué hacer si has sido víctima de phishing? 
+                    
+                    Si pese a todas las precauciones crees que has podido caer en la trampa o, más literalmente, has picado el anzuelo y has dado datos personales en alguna página fraudulenta... ¿qué debes hacer?
+                    
+                    ticketmaster
+                    
+                    Pues, como norma general, ante una sospecha de phishing, debes:
+                    
+                        Cambiar la contraseña del servicio suplantado (cuenta de correo, acceso al servicio, etc.).
+                        Avisar a los posibles bancos afectados por el fraude (y si se ha visto implicada una tarjeta, anularla).
+                    
+                    Si fruto del phishing te han robado la cuenta de algún servicio y quieres recuperarla, consulta aquí los pasos que debes seguir. 
+                    Vive con OCU un Internet más seguro
+                    
+                    Si quieres evitar ser víctima de un ataque de phishing, ciberacoso, virus o cualquier otra técnica de un desaprensivo pirata informático que busca vulnerar tu privacidad y la de los tuyos, te animamos a consultar unos útiles consejos para navegar por Internet sin miedo,
+                    
+                    Vive un Internet seguro
+                    Cuenta con OCU
+                    
+                    En OCU estamos de tu parte: te ayudamos a defender tus intereses, tu privacidad, tus datos y tu dinero. Y lo hacemos con la mejor información y con comparadores independientes y adaptados a tus necesidades, para que puedas equiparte con lo que necesitas. Consume mejor y más seguro,</p>
+            </div>
+        </main>
+        
+        <footer class="w-full bg-gray-400 py-4">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-gray-600">© 2024 redblindada</div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('.dropdown-button');
+            const menu = document.querySelector('.dropdown-menu');
+        
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+        
+    </script>
+</body>
+</html>

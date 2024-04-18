@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataques de Phishing - RedBlindada</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="w-full bg-white shadow-md">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-gray-700 flex items-center">
+                        <a href="index.html" class="flex items-center">
+                            <img src="/img/logo.jpg" alt="Nombre del logotipo" class="h-8 mr-2">
+                            <span class="text-gray-900 text-3xl font-semibold uppercase hover:text-gray-600">redblindada</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center select-none">
+                        <div class="flex flex-1"></div>
+                        <div class="relative">
+                            <button type="button"
+                                class="dropdown-button flex items-center mx-3 text-gray-600 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                                Tipos de Ataque
+                                <svg class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 10.586l2.293-2.293a1 1 0 11 1.414 1.414l-3 3A1 1 0 0110 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu absolute right-0 mt-2 hidden bg-white shadow-md rounded py-1">
+                                <li><a href="phishing.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Phishing</a>
+                                </li>
+                                <li><a href="escritorio-remoto.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a
+                                        Escritorio Remoto</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a Base de
+                                        Datos</a></li>
+                                <li><a href="Infeccion-de-pdf.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Infeccion de
+                                        PDF</a></li>
+                            </ul>
+                        </div>
+                        <a href="acercade.html" class="mx-3 hover:text-gray-600">Acerca de</a>
+                        <a href="contacto.html" class="mx-3 hover:text-gray-600">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-1">
+            <div class="container mx-auto px-6 py-8">
+                <h1 class="text-4xl font-bold text-gray-800">Ataques de Escritorio Remoto</h1>
+                <p class="mt-4 text-lg text-gray-700">Los ataques de escritorio remoto son aquellos en los que un atacante accede de forma no autorizada al escritorio de un usuario, a menudo a través de software de acceso remoto.</p>
+                
+                <h2 class="text-2xl font-bold text-gray-800 mt-8">¿Qué son los ataques de escritorio remoto?</h2>
+                <p class="mt-4 text-lg text-gray-700">Los ataques de escritorio remoto son aquellos en los que un atacante accede de forma no autorizada al escritorio de un usuario, a menudo a través de software de acceso remoto. Estos ataques pueden permitir al intruso ver la pantalla del usuario, controlar el teclado y el ratón, acceder a archivos y programas, e incluso realizar cambios en la configuración del sistema sin el consentimiento del usuario.</p>
+                <!-- Agregar documento con capturas -->
+                <iframe src="/Documentos/Escritorio remoto.pdf" width="100%" margin top=10px height="600px" frameborder="0"></iframe>
+
+                <h2 class="text-2xl font-bold text-gray-800 mt-8">Cómo defenderse del ataque de escritorio remoto</h2>
+                <p class="mt-4 text-lg text-gray-700">Para defenderse de los ataques de escritorio remoto, es importante seguir buenas prácticas de seguridad informática, como:</p>
+                <ul class="mt-4 text-lg text-gray-700 list-disc pl-6">
+                    <li>Usar contraseñas seguras y únicas para todas las cuentas.</li>
+                    <li>Mantener el software y los sistemas operativos actualizados con los últimos parches de seguridad.</li>
+                    <li>Utilizar software de acceso remoto seguro y confiable.</li>
+                    <li>Configurar adecuadamente las opciones de seguridad y privacidad en el software de acceso remoto.</li>
+                    <li>Ser consciente de las prácticas de ingeniería social utilizadas por los atacantes para engañar a los usuarios y evitar caer en sus trampas.</li>
+                    <li>Mantener siempre activado un software antivirus y antimalware actualizado para detectar y eliminar posibles amenazas.</li>
+                    <li>Realizar copias de seguridad regulares de los datos importantes para poder restaurarlos en caso de un ataque exitoso.</li>
+                    <li>Estar atento a cualquier actividad sospechosa en el equipo, como cambios no autorizados en la configuración o la presencia de archivos desconocidos.</li>
+                </ul>
+            </div>
+        </main>        
+        
+        <footer class="w-full bg-gray-400 py-4">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-gray-600">© 2024 redblindada</div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('.dropdown-button');
+            const menu = document.querySelector('.dropdown-menu');
+        
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+        
+    </script>
+</body>
+</html>

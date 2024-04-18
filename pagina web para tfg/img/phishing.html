@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataques de Phishing - RedBlindada</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="w-full bg-white shadow-md">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-gray-700 flex items-center">
+                        <a href="#" class="flex items-center">
+                            <img src="/img/logo.jpg" alt="Nombre del logotipo" class="h-8 mr-2">
+                            <span class="text-gray-900 text-3xl font-semibold uppercase hover:text-gray-600">redblindada</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center select-none">
+                        <div class="flex flex-1"></div>
+                        <div class="relative">
+                            <button type="button"
+                                class="dropdown-button flex items-center mx-3 text-gray-600 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                                Tipos de Ataque
+                                <svg class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 10.586l2.293-2.293a1 1 0 11 1.414 1.414l-3 3A1 1 0 0110 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu absolute right-0 mt-2 hidden bg-white shadow-md rounded py-1">
+                                <li><a href="phishing.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Phishing</a>
+                                </li>
+                                <li><a href="escritorio-remoto.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a
+                                        Escritorio Remoto</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a Base de
+                                        Datos</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Infeccion de
+                                        PDF</a></li>
+                            </ul>
+                        </div>
+                        <a href="acercade.html" class="mx-3 hover:text-gray-600">Acerca de</a>
+                        <a href="contacto.html" class="mx-3 hover:text-gray-600">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="flex-1">
+            <div class="container mx-auto px-6 py-8">
+                <h1 class="text-4xl font-bold text-gray-800">Ataques de Phishing</h1>
+                <p class="mt-4 text-lg text-gray-700">Los ataques de phishing son intentos de obtener información sensible, como contraseñas o datos financieros, haciéndose pasar por entidades legítimas a través de correos electrónicos, mensajes de texto, o sitios web falsos.</p>
+                <!-- Aquí puedes agregar más contenido sobre los ataques de phishing -->
+
+                <h2 class="text-2xl font-bold text-gray-800 mt-8">Cómo se ejecuta el ataque de phishing</h2>
+                <p class="mt-4 text-lg text-gray-700">El ataque de phishing generalmente comienza con el envío masivo de correos electrónicos fraudulentos que parecen provenir de empresas o instituciones legítimas. Estos correos electrónicos suelen contener enlaces maliciosos que dirigen a los usuarios a sitios web falsificados donde se les solicita que ingresen información personal o confidencial.</p>
+
+                <h2 class="text-2xl font-bold text-gray-800 mt-8">Cómo defenderse del ataque de phishing</h2>
+                <p class="mt-4 text-lg text-gray-700">Para defenderse del phishing, es importante estar atento a los correos electrónicos sospechosos y verificar la autenticidad de los enlaces antes de hacer clic en ellos. Nunca proporciones información personal o confidencial a través de correos electrónicos no solicitados o sitios web no verificados. Además, asegúrate de tener actualizado tu software antivirus y de mantener una contraseña segura y única para cada cuenta en línea.</p>
+            </div>
+        </main>
+
+        <footer class="w-full bg-gray-400 py-4">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-gray-600">© 2024 redblindada</div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('.dropdown-button');
+            const menu = document.querySelector('.dropdown-menu');
+        
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+        
+    </script>
+</body>
+</html>

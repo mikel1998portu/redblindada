@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="stylos.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Agregué algunos comentarios para entender mejor la estructura del HTML -->
+</head>
+<canvas></canvas>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<body class="bg-gray-900">
+    <div class="min-h-screen flex flex-col">
+        <header class="w-full bg-white shadow-md">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-gray-700 flex items-center">
+                        <a href="index.html" class="flex items-center">
+                            <img src="/img/logo.jpg" alt="Nombre del logotipo" class="h-8 mr-2">
+                            <span
+                                class="text-gray-900 text-3xl font-semibold uppercase hover:text-gray-600">redblindada</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center select-none">
+                        <div class="flex flex-1"></div>
+                        <div class="relative">
+                            <button type="button"
+                                class="dropdown-button flex items-center mx-3 text-gray-600 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                                Tipos de Ataque
+                                <svg class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 10.586l2.293-2.293a1 1 0 11
+                                    1.414 1.414l-3 3A1 1 0 0110 12z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu absolute right-0 mt-2 hidden bg-white shadow-md rounded py-1">
+                                <li><a href="phishing.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Phishing</a>
+                                </li>
+                                <li><a href="escritorio-remoto.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a
+                                        Escritorio Remoto</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a Base de
+                                        Datos</a></li>
+                            </ul>
+                        </div>
+                        <a href="Noticias.html" class="mx-3 hover:text-gray-600">Noticias</a>
+                        <a href="acercade.html" class="mx-3 hover:text-gray-600">Acerca de</a>
+                        <a href="contacto.html" class="mx-3 hover:text-gray-600">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="min-h-screen bg-black py-6 flex flex-col justify-center sm:py-12">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+              <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+              <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+                <div class="max-w-md mx-auto">
+                  <div>
+                    <h1 class="text-2xl font-semibold">Contacto</h1>
+                    <p class="mb-4 text-gray-600">¡Gracias por querer ponerte en contacto con nosotros! Por favor, completa el siguiente formulario y te responderemos lo antes posible.</p>
+                  </div>
+                  <form action="enviar.php" method="POST" class="divide-y divide-gray-200">
+                    <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                      <div class="relative">
+                        <label for="nombre" class="text-gray-700 font-bold mb-2">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                      </div>
+                      <div class="relative">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                      </div>
+                      <div class="relative">
+                        <label for="mensaje" class="block text-gray-700 font-bold mb-2">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-md"></textarea>
+                      </div>
+                      <div>
+                        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <footer class="w-full bg-gray-400 py-4">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-gray-600">© 2024 redblindada</div>
+                    <!-- Mantuve el texto original del pie de página -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Instagram</a>
+                        <!-- Mantuve los enlaces de redes sociales originales -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const button = document.querySelector('.dropdown-button');
+              const menu = document.querySelector('.dropdown-menu');
+          
+              button.addEventListener('click', function () {
+                  menu.classList.toggle('hidden');
+              });
+          });
+
+        //**
+        $(function () {
+            var canvas = document.querySelector("canvas"),
+                ctx = canvas.getContext("2d");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            ctx.lineWidth = 0.3;
+            ctx.strokeStyle = new Color(150).style;
+        
+            var dots = {
+                nb: 250,
+                distance: 100,
+                d_radius: 150,
+                array: []
+            };
+        
+            function colorValue(min) {
+                return Math.floor(Math.random() * 255 + min);
+            }
+        
+            function createColorStyle(r, g, b, a) {
+                return "rgba(" + r + "," + g + "," + b + "," + a + ")";
+            }
+        
+            function mixComponents(comp1, weight1, comp2, weight2) {
+                return (comp1 * weight1 + comp2 * weight2) / (weight1 + weight2);
+            }
+        
+            function averageColorStyles(dot1, dot2) {
+                var color1 = dot1.color,
+                    color2 = dot2.color;
+        
+                var r = mixComponents(color1.r, dot1.radius, color2.r, dot2.radius),
+                    g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
+                    b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
+                return createColorStyle(Math.floor(r), Math.floor(g), Math.floor(b), 0.8);
+            }
+        
+            function Color(min) {
+                min = min || 0;
+                this.r = colorValue(min);
+                this.g = colorValue(min);
+                this.b = colorValue(min);
+                this.style = createColorStyle(this.r, this.g, this.b, 0.8);
+            }
+        
+            function Dot() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+        
+                this.vx = -0.5 + Math.random();
+                this.vy = -0.5 + Math.random();
+        
+                this.radius = Math.random() * 2;
+        
+                this.color = new Color();
+                console.log(this);
+            }
+        
+            Dot.prototype = {
+                draw: function () {
+                    ctx.beginPath();
+                    ctx.fillStyle = this.color.style;
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                    ctx.fill();
+                }
+            };
+        
+            function createDots() {
+                for (i = 0; i < dots.nb; i++) {
+                    dots.array.push(new Dot());
+                }
+            }
+        
+            function moveDots() {
+                for (i = 0; i < dots.nb; i++) {
+                    var dot = dots.array[i];
+        
+                    if (dot.y < 0 || dot.y > canvas.height) {
+                        dot.vx = dot.vx;
+                        dot.vy = -dot.vy;
+                    } else if (dot.x < 0 || dot.x > canvas.width) {
+                        dot.vx = -dot.vx;
+                        dot.vy = dot.vy;
+                    }
+                    dot.x += dot.vx;
+                    dot.y += dot.vy;
+                }
+            }
+        
+            function connectDots() {
+                for (i = 0; i < dots.nb; i++) {
+                    for (j = 0; j < dots.nb; j++) {
+                        i_dot = dots.array[i];
+                        j_dot = dots.array[j];
+        
+                        if (
+                            i_dot.x - j_dot.x < dots.distance &&
+                            i_dot.y - j_dot.y < dots.distance &&
+                            i_dot.x - j_dot.x > -dots.distance &&
+                            i_dot.y - j_dot.y > -dots.distance
+                        ) {
+                            ctx.beginPath();
+                            ctx.strokeStyle = averageColorStyles(i_dot, j_dot);
+                            ctx.moveTo(i_dot.x, i_dot.y);
+                            ctx.lineTo(j_dot.x, j_dot.y);
+                            ctx.stroke();
+                            ctx.closePath();
+                        }
+                    }
+                }
+            }
+        
+            function drawDots() {
+                for (i = 0; i < dots.nb; i++) {
+                    var dot = dots.array[i];
+                    dot.draw();
+                }
+            }
+        
+            function animateDots() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                moveDots();
+                connectDots();
+                drawDots();
+        
+                requestAnimationFrame(animateDots);
+            }
+        
+            $("canvas").on("mousemove", function (e) {
+                // Cambia el color de los puntos cuando el ratón se mueve sobre el lienzo
+                var mouseX = e.clientX - canvas.offsetLeft;
+                var mouseY = e.clientY - canvas.offsetTop;
+                for (i = 0; i < dots.nb; i++) {
+                    var dot = dots.array[i];
+                    var distanceX = dot.x - mouseX;
+                    var distanceY = dot.y - mouseY;
+                    var distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+                    if (distance < 50) {
+                        dot.color.style = createColorStyle(255, 255, 255, 0.8); // Cambia el color a blanco
+                    } else {
+                        dot.color.style = createColorStyle(dot.color.r, dot.color.g, dot.color.b, 0.8);
+                    }
+                }
+            });
+        
+            $("canvas").on("mouseleave", function (e) {
+                // Restaura el color de los puntos cuando el ratón sale del lienzo
+                for (i = 0; i < dots.nb; i++) {
+                    var dot = dots.array[i];
+                    dot.color.style = createColorStyle(dot.color.r, dot.color.g, dot.color.b, 0.8);
+                }
+            });
+        
+            createDots();
+            requestAnimationFrame(animateDots);
+        });
+        
+        
+          
+      </script>
+</body>
+</html>

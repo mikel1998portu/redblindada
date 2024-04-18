@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9206303737489482"
+     crossorigin="anonymous"></script>
+    <title>Protegiendo las Fronteras Digitales: Estudio de Phishing, Ataques Remotos y Estrategias de Defensa en
+        ciberseguridad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Agregué algunos comentarios para entender mejor la estructura del HTML -->
+    <style>
+        /* Estilos adicionales */
+        .noticia-container {
+            padding: 1rem;
+            background-color: #f3f4f6;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .noticia-container h2 {
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+
+        .noticia-container p {
+            color: #4a5568;
+        }
+
+        .noticia-container a {
+            color: #3182ce;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-300">
+    <div class="min-h-screen flex flex-col">
+        <header class="w-full bg-white shadow-md">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-gray-700 flex items-center">
+                        <a href="index.html" class="flex items-center">
+                            <img src="/img/logo.jpg" alt="Nombre del logotipo" class="h-8 mr-2">
+                            <span
+                                class="text-gray-900 text-3xl font-semibold uppercase hover:text-gray-600">redblindada</span>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center select-none">
+                        <div class="flex flex-1"></div>
+                        <div class="relative">
+                            <button type="button"
+                                class="dropdown-button flex items-center mx-3 text-gray-600 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                                Tipos de Ataque
+                                <svg class="h-5 w-5 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 111.414-1.414L10 10.586l2.293-2.293a1 1 0 11 1.414 1.414l-3 3A1 1 0 0110 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu absolute right-0 mt-2 hidden bg-white shadow-md rounded py-1">
+                                <li><a href="phishing.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Phishing</a>
+                                </li>
+                                <li><a href="escritorio-remoto.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a
+                                        Escritorio Remoto</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ataque a Base de
+                                        Datos</a></li>
+                                <li><a href="base-de-datos.html"
+                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Infeccion de
+                                        PDF</a></li>
+                            </ul>
+                        </div>
+                        <a href="Noticias.html" class="mx-3 hover:text-gray-600">Noticias</a>
+                        <a href="acercade.html" class="mx-3 hover:text-gray-600">Acerca de</a>
+                        <a href="contacto.html" class="mx-3 hover:text-gray-600">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container mx-auto px-6 py-8">
+            <h1 class="text-4xl font-bold mb-4">Noticias de Ciberseguridad</h1>
+
+            <!-- Aquí vamos a insertar las noticias con JavaScript -->
+            <div id="noticias-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Las noticias se cargarán aquí -->
+            </div>            
+        </div>
+        <footer class="w-full bg-gray-400 py-4">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-gray-600">© 2024 redblindada</div>
+                    <!-- Mantuve el texto original del pie de página -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Facebook</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Twitter</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500">Instagram</a>
+                        <!-- Mantuve los enlaces de redes sociales originales -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const noticiasContainer = document.getElementById('noticias-container');
+
+            // Aquí debes reemplazar 'TU_API_KEY' con tu propia clave de API de NewsAPI.org
+            const apiKey = '59c6275b21f147deb5b9cdcb1bdb2e62';
+            const url = `https://newsapi.org/v2/everything?q=ciberseguridad&pageSize=32&apiKey=${apiKey}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.articles) {
+                        data.articles.forEach(article => {
+                            const articleElement = `
+                                <div class="noticia-container">
+                                    <h2 class="text-xl font-bold mb-2">${article.title}</h2>
+                                    <img src="${article.urlToImage}" alt="${article.title}" class="mb-2">
+                                    <p>${article.description}</p>
+                                    <a href="${article.url}" class="text-blue-500 hover:underline" target="_blank">Leer más</a>
+                                </div>
+                            `;
+                            noticiasContainer.innerHTML += articleElement;
+                        });
+                    } else {
+                        noticiasContainer.innerHTML = '<p>No se pudieron cargar las noticias en este momento. Por favor, inténtalo de nuevo más tarde.</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error al cargar las noticias:', error);
+                    noticiasContainer.innerHTML = '<p>Ocurrió un error al cargar las noticias. Por favor, inténtalo de nuevo más tarde.</p>';
+                });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('.dropdown-button');
+            const menu = document.querySelector('.dropdown-menu');
+
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+
+    </script>
+</body>
+</html>
